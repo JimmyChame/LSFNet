@@ -4,7 +4,6 @@ import torch
 import math
 import torch.nn.functional as F
 import torch.nn as nn
-from colour_demosaicing import demosaicing_CFA_Bayer_Malvar2004
 
 
 def create_dir(path):
