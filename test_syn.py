@@ -123,15 +123,15 @@ def evaluate_net(opt):
 
 if __name__ == "__main__":
 
-    os.environ["CUDA_VISIBLE_DEVICES"] = "2"
+    os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
     opt = {
-            "src_path": "/ssd2T_3/",
-            "test_items": ["multiexposure/"],
+            "src_path": "./Dataset/",
+            "test_items": ["test/"],
             "dataset_name": "test_2.h5",
 
-            "result_path": "/hdd4T_1/cm/codes/multiexposure/result_png/LSFNet_L1/",
-            "ckpt_dir": "/hdd4T_1/cm/codes/multiexposure/ckpt/LSFNet_L1/",
+            "result_path": "./result_png/LSFNet_L1/",
+            "ckpt_dir": "./ckpt/LSFNet_L1/",
 
             "iter_list": ['0300'],
             "NetName": LSFNet,
