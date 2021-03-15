@@ -33,12 +33,13 @@ python train.py
 
 ### Test
 1. Download the trained models (uploading soon) and place them in `/ckpt/`.
-2. Place the testing dataset in `/Dataset/test/` or set the testing path in `test.py` to your own path.
-3. Set the parameters in `test.py` (eg. 'epoch_test', 'gray' and etc.)
-3. test the trained models:
+2. use `gen_valid_dataset.py` to package them in the h5py format
+3. Place the testing dataset in `/Dataset/test/` or set the testing path in `test_syn.py` to your own path.
+4. Set the parameters in `test_syn.py` 
+5. test the trained models:
 ```
 cd $LSFNet_ROOT
-python test.py
+python test_syn.py
 ```
 
 ## Citation
