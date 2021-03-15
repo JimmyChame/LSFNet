@@ -203,10 +203,10 @@ if __name__ == "__main__":
     
     os.environ["CUDA_VISIBLE_DEVICES"] = "2"
     opt = {
-            'src_path': ["/hdd4T_2/SID/Sony/long/",
+            'src_path': ["/hdd/SID/Sony/long/",
                         ],
-            'dst_path': "/ssd2T_3/multiexposure/",
-            'dst_name': "test_3.h5",
+            'dst_path': "./Dataset/test/",
+            'dst_name': "test.h5",
             'patch_size': [0,0],
             'crop_stride': 150,
             'random_crop': False,
