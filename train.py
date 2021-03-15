@@ -165,13 +165,12 @@ if __name__ == "__main__":
 
     opt = {
 
-        'src_path': "/ssd2T_3/multiexposure/train_2.h5",
+        'src_path': "./Dataset/train/train_2.h5",
 
-        #'val_path': "/ssd2T_3/multiexposure/valid.h5",
-        'val_path': "/ssd2T_3/multiexposure/test_2.h5",
+        'val_path': "./Dataset/test/valid.h5",
 
-        'ckpt_dir': "/hdd4T_1/cm/codes/multiexposure/ckpt/LSFNet_L1_hdr/",
-        'log_dir': "/hdd4T_1/cm/codes/multiexposure/log/LSFNet_L1_hdr/",
+        'ckpt_dir': "./ckpt/LSFNet_L1_hdr/",
+        'log_dir': "./log/LSFNet_L1_hdr/",
 
         'batch_size': 16,
         'patch_size': 256,
@@ -181,7 +180,7 @@ if __name__ == "__main__":
         'finetune': False,
         'init_epoch':0,
         'NetName': LSFNet,
-        'train_loss': 'L1',#'L2',
+        'train_loss': 'L1',
     }
     create_dir(opt['log_dir'])
     create_dir(opt['ckpt_dir'])
