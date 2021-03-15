@@ -7,6 +7,7 @@ Pytorch code for "**Low-light Image Restoration with Short- and Long-exposure Ra
 * Python 3.6
 * Pytorch 1.1
 * CUDA 9.0
+* rawpy 0.13.1
 
 ## Get Started
 ### Installation
