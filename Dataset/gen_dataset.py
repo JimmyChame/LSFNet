@@ -108,13 +108,8 @@ def gen_dataset(src_files, dst_path):
 
 if __name__ == "__main__":
     os.environ["CUDA_VISIBLE_DEVICES"] = "1"
-    src_path = ["/hdd4T_1/cm/codes/DataSet/fivek_dataset/perfect/RGGB/train/",
-                "/hdd4T_1/cm/codes/DataSet/fivek_dataset/perfect/RGGB/train_supp/",
-                "/hdd4T_1/cm/codes/DataSet/fivek_dataset/perfect/RGGB/train_supp2/",
-                "/hdd4T_1/cm/codes/DataSet/fivek_dataset/perfect/GRBG/train/",
-                "/hdd4T_1/cm/codes/DataSet/fivek_dataset/perfect/GBRG/train/",
-                "/hdd4T_1/cm/codes/DataSet/fivek_dataset/perfect/BGGR/train/"]
-    dst_path = "/hdd4T_1/cm/codes/DataSet/fivek_dataset/perfect/train_sv/"
+    src_path = ["/hdd/codes/DataSet/fivek_dataset/selected/train/"]
+    dst_path = "./DataSet/train/"
 
     src_files = []
     for path in src_path:
